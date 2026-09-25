@@ -50,7 +50,10 @@ class _ChatView extends StatelessWidget {
                 },
               ),
             ),
-            MessageFieldBox(onValue: chatProvider.sendMessage),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10),
+              child: MessageFieldBox(onValue: chatProvider.sendMessage),
+            ),
           ],
         ),
       ),
